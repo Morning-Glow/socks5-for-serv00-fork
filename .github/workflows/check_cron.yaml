@@ -2,8 +2,8 @@ name: Execute SSH Commands
 
 on:
   workflow_dispatch: # 手动触发工作流
-schedule:
-  - cron: "30 23,12 * * *"  # 每天 UTC 23:30 和 12:30 触发，即北京时间早上7:30和晚上8:30
+  schedule:
+    - cron: "30 23,12 * * *"  # 每天 UTC 23:30 和 12:30 触发，即北京时间早上7:30和晚上8:30
 
 jobs:
   execute-commands:
